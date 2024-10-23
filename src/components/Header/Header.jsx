@@ -24,7 +24,12 @@ const Header = () => {
     'Wines & Drinks',
     'Fresh Seafood'
   ])
+
+  const [isOpenAccount,setisOpenAccount]=useState(false)
   let account=['a','b']
+  const isOpenAcount=()=>{
+   setisOpenAccount(!isOpenAccount)
+  }
   return (
     <div>
     <header>
@@ -69,8 +74,18 @@ const Header = () => {
                 <li className='list-inline-item'>
                   <span>
                     <img src={user} alt="" />
-                    <span className='listname p-0 m-0'>Account</span>
-                    {/* <Selectdrop data={account}/> */}
+                    <span className='listname p-0 m-0' onClick={isOpenAcount}>Account</span>
+                    {
+                      isOpenAccount==true && 
+                      <ul className='AcountDropdown'>
+                        <li>My Account</li>
+                        <li>Order Tracking</li>
+                        <li>My Voucher</li>
+                        <li>My Wishlist</li>
+                        <li>Setting</li>
+                        <li>Sign out</li>
+                      </ul>
+                    }
                     </span>
                 </li>
               </ul>

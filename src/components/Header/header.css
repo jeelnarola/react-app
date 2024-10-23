@@ -87,3 +87,28 @@ header .headerTabs li span .listname{
     font-size: 18px;
     color: gray;
 }
+
+.AcountDropdown{
+    position: absolute;
+    top: 150%;
+    left: -65%;
+    width: 200px;
+    z-index: 100;
+    box-shadow: 0px 3px 6px rgb(0 0 0 /20%);
+    padding:20px 15px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.AcountDropdown li{
+    padding: 10px;
+    border-radius: 2px;
+    transition: all 0.2s ease-in;
+    text-align: start;
+}
+
+.AcountDropdown li:hover{
+    background-color: #3bb77e;
+    color: white;
+
+}
