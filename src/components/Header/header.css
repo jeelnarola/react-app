@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.custContainer{
+    padding: 0px 45px;
+}
+header{
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    padding: 15px 0px;
+}
+header .custContainer .row1 .headerSearch{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #3bb77e;
+}
+header .custContainer .row1 .headerSearch .selectDrop{
+    padding: 7px 15px;
+
+}
+.row1{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header .headerSearch .selectDrop{
+    width: 30%;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+}
+header .headerSearch .selectDrop::after{
+    content: '';
+    width: 1px;
+    height: 30px;
+    background-color: rgba(0,0,0,0.1);
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
+header .headerSearch .search{
+    width: 89%;
+    position: relative;
+}
+header .headerSearch .search input{
+    width: 100%;
+    height: 30px;
+    margin: 3px 0px;
+    padding-left:20px;
+    border: 0px;
+    outline: none !important;
+}
+header .headerTabs{
+    padding-left: 30px;
+}
+header .headerTabs li{
+    position: relative;
+}
+header .headerTabs li span{
+    font-size: 15px;
+    cursor: pointer;
+    margin: 0px 5px;
+    /* margin-left: 65px; */
+}
+header .headerTabs span.badge{
+    width: 20px;
+    height: 20px;
+    color: white;
+    border-radius: 100%;
+    position: absolute;
+    top: -5px;
+    left: 12px;
+    font-size: 12px;
+    /* text-align: center; */
+    /* line-height: 20px; */
+
+}
+
+header .headerTabs li span .listname{   
+    padding: 0px 3px;
+    font-size: 18px;
+    color: gray;
+}
