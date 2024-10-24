@@ -5,7 +5,8 @@ import Logo from '../../asset/Image/logo.svg'
 import Compare from '../../asset/Image/icon-compare.svg'
 import heart from '../../asset/Image/icon-heart.svg'
 import cart from '../../asset/Image/icon-cart.svg'
-import user from '../../asset/Image/icon-user.svg'
+import user from '../../asset/Image/icon-user.svg';
+import Nav from './Nav/Nav'
 const Header = () => {
   const [catgories,setcatgories]=useState([
     'All Catgories',
